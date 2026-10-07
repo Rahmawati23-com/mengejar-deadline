@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>5 Mitos & Fakta Seputar Desain yang Sering Salah Dipahami — Mengejar Deadline</title>
+  <meta name="description" content="Banyak yang masih salah paham soal dunia desain. Dari soal font, revisi, sampai inspirasi — kita luruskan 5 mitos yang paling sering muncul. Baca dan order desain profesional sekarang!" />
+  <meta name="keywords" content="mitos desain, fakta desain, jasa desain profesional, order desain, mengejar deadline, branding, typography, revisi desain" />
+  <link rel="canonical" href="https://mengejar-deadline.example.com/blog/mitos-fakta-design.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="5 Mitos & Fakta Seputar Desain yang Sering Salah Dipahami" />
+  <meta property="og:description" content="Yang sering kamu dengar soal desain — belum tentu benar. Kita luruskan satu per satu." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://mengejar-deadline.example.com/blog/mitos-fakta-design.html" />
+  <meta property="og:image" content="../assets/blog-mitos-fakta.jpg" />
+  <meta property="article:published_time" content="2026-10-07" />
+  <meta property="article:author" content="Mengejar Deadline" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="5 Mitos & Fakta Seputar Desain yang Sering Salah Dipahami" />
+  <meta name="twitter:description" content="Yang sering kamu dengar soal desain — belum tentu benar." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+
+  <style>
+    /* ── Article-specific styles ── */
+    .article-wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 9rem 1.5rem 5rem;
+    }
+
+    /* Header */
+    .article-header { margin-bottom: 2.5rem; }
+    .article-cats { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+    .article-cats .badge {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--blue);
+      border: 1px solid rgba(59,123,255,0.35);
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+    }
+    .article-header h1 {
+      font-size: clamp(1.8rem, 4.5vw, 3rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .article-header .article-excerpt {
+      font-size: 1.1rem;
+      color: var(--gray-2);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--gray-3);
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .article-meta .author { color: var(--gray-1); font-weight: 600; }
+
+    /* Cover image */
+    .article-cover {
+      width: 100%;
+      aspect-ratio: 16/8;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      margin-bottom: 3rem;
+      background: linear-gradient(135deg, rgba(26,58,143,0.5), rgba(6,8,16,1));
+    }
+    .article-cover-fallback {
+      width: 100%;
+      aspect-ratio: 16/8;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      margin-bottom: 3rem;
+      background: linear-gradient(135deg, rgba(26,58,143,0.45) 0%, rgba(6,8,16,1) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .article-cover-fallback .cover-label {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: rgba(59,123,255,0.6);
+      letter-spacing: 0.12em;
+    }
+
+    /* Article body */
+    .article-body { margin-bottom: 4rem; }
+    .article-body p {
+      font-size: 1rem;
+      color: var(--gray-2);
+      line-height: 1.85;
+      margin-bottom: 1.5rem;
+    }
+    .article-body h2 {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin: 3rem 0 1rem;
+    }
+    .article-body h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--blue-bright);
+      margin: 1.5rem 0 0.6rem;
+      letter-spacing: 0.01em;
+    }
+
+    /* Mitos/Fakta block */
+    .mf-block {
+      border-radius: 14px;
+      overflow: hidden;
+      margin: 2rem 0;
+      border: 1px solid var(--border);
+    }
+    .mf-mitos {
+      background: rgba(239, 68, 68, 0.08);
+      border-left: 3px solid #EF4444;
+      padding: 1.25rem 1.5rem;
+    }
+    .mf-mitos .mf-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #EF4444;
+      margin-bottom: 0.4rem;
+    }
+    .mf-mitos p { color: #FCA5A5; margin-bottom: 0; font-style: italic; }
+    .mf-fakta {
+      background: rgba(59,123,255,0.07);
+      border-left: 3px solid var(--blue);
+      padding: 1.25rem 1.5rem;
+    }
+    .mf-fakta .mf-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--blue-bright);
+      margin-bottom: 0.4rem;
+    }
+    .mf-fakta p { color: var(--gray-1); margin-bottom: 0; }
+
+    /* Instagram embed placeholder */
+    .ig-embed {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      text-align: center;
+      margin: 2.5rem 0;
+    }
+    .ig-embed p { color: var(--gray-3); font-size: 0.85rem; margin-bottom: 0.75rem; }
+    .ig-embed a { color: var(--blue); font-weight: 700; font-size: 0.9rem; }
+
+    /* Quote block */
+    .blockquote {
+      border-left: 3px solid var(--blue);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      background: rgba(59,123,255,0.06);
+      border-radius: 0 10px 10px 0;
+    }
+    .blockquote p {
+      font-size: 1.1rem;
+      color: var(--gray-1);
+      font-style: italic;
+      font-weight: 600;
+      margin-bottom: 0 !important;
+    }
+
+    /* CTA inline */
+    .inline-cta {
+      background: linear-gradient(135deg, rgba(59,123,255,0.12) 0%, rgba(34,211,238,0.06) 100%);
+      border: 1px solid rgba(59,123,255,0.25);
+      border-radius: 16px;
+      padding: 2.5rem;
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .inline-cta h3 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .inline-cta p {
+      color: var(--gray-2);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+    .inline-cta .cta-btns { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+
+    /* Share section */
+    .article-share {
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .article-share p { color: var(--gray-3); font-size: 0.85rem; }
+    .share-links { display: flex; gap: 0.75rem; }
+    .share-links a {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gray-1);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .share-links a:hover { border-color: var(--blue); color: var(--blue); }
+
+    /* Related / Back nav */
+    .article-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .article-nav a {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gray-2);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: color 0.2s;
+    }
+    .article-nav a:hover { color: var(--blue); }
+
+    /* Final big CTA */
+    .final-article-cta {
+      background: linear-gradient(180deg, var(--bg) 0%, rgba(10,20,50,0.5) 50%, var(--bg) 100%);
+      padding: 6rem 1.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-article-cta .orb { position: absolute; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="nav-wrapper">
+    <header class="nav-pill">
+      <a href="../index.html" class="logo">
+        <img src="../assets/logo.png" alt="Mengejar Deadline" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <span class="logo-text" style="display:none">MD</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#work">Work</a></li>
+          <li><a href="../blog.html" class="active">Blog</a></li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+      </nav>
+      <a href="../index.html#cta" class="btn-pill">Let's Work</a>
+      <button class="nav-toggle" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    </header>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#services">Services</a></li>
+      <li><a href="../index.html#work">Work</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#cta" class="btn-pill">Let's Work</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══ ARTICLE ═══ -->
+  <article class="article-wrapper" itemscope itemtype="https://schema.org/Article">
+    <meta itemprop="author" content="Mengejar Deadline" />
+    <meta itemprop="datePublished" content="2026-10-07" />
+
+    <!-- Article Header -->
+    <header class="article-header">
+      <div class="article-cats">
+        <span class="badge">Design</span>
+        <span class="badge">Edukasi</span>
+        <span class="badge">Mitos &amp; Fakta</span>
+      </div>
+      <h1 itemprop="headline">5 Mitos &amp; Fakta Seputar Desain<br/>yang Sering Salah Dipahami</h1>
+      <p class="article-excerpt">
+        Yang sering kamu dengar belum tentu yang pasti benar. Dari soal font, revisi, sampai inspirasi — kita luruskan satu per satu, supaya kamu tahu apa yang sebenarnya terjadi di balik proses desain.
+      </p>
+      <div class="article-meta">
+        <span>7 Oktober 2026</span>
+        <span>·</span>
+        <span class="author">Mengejar Deadline</span>
+        <span>·</span>
+        <span>5 menit baca</span>
+      </div>
+    </header>
+
+    <!-- ─────────────────────────────────────────────────────────
+         THUMBNAIL / COVER IMAGE
+         Ganti file di: assets/blog-mitos-fakta.jpg (atau .png)
+         ───────────────────────────────────────────────────────── -->
+    <div class="article-cover-wrapper">
+      <img
+        src="../assets/blog-mitos-fakta.png"
+        alt="5 Mitos & Fakta Seputar Desain — Mengejar Deadline"
+        class="article-cover"
+        onerror="this.style.display='none'; document.getElementById('coverFallback').style.display='flex';"
+      />
+      <div id="coverFallback" class="article-cover-fallback" style="display:none;" aria-hidden="true">
+        <span class="cover-label">MITOS &amp; FAKTA — DESIGN</span>
+      </div>
+    </div>
+
+
+    <!-- Instagram Embed Placeholder -->
+    <div class="ig-embed">
+      <p>📸 Lihat juga versi carousel-nya di Instagram kami!</p>
+      <a href="https://instagram.com/mengejar.deadlines" target="_blank" rel="noopener">@mengejar.deadlines →</a>
+    </div>
+
+    <!-- ═══ BODY ═══ -->
+    <div class="article-body" itemprop="articleBody">
+
+      <p>
+        Di dunia desain, banyak asumsi yang beredar dan terlanjur dianggap benar — padahal kalau kita telaah lebih dalam, fakta yang sebenarnya cukup berbeda.
+        Artikel ini hadir dari konten yang kami buat di Instagram: seri <strong>Mitos &amp; Fakta</strong>.
+        Tujuannya simpel: supaya kamu — baik yang mau order desain, yang baru belajar desain, atau yang lagi mikirin rebrand bisnis — punya gambaran yang lebih jujur.
+      </p>
+
+      <p>
+        Yuk, kita bahas satu per satu.
+      </p>
+
+      <!-- ── MITOS 1 ── -->
+      <h2>#1 — "Designer cuma-cuma desain terlihat bagus."</h2>
+      <p>
+        Ini mungkin mitos yang paling sering kami dengar. Orang awam sering mengira tugas designer adalah bikin sesuatu yang "enak dilihat" — selesai. Tapi ternyata, ada jauh lebih banyak yang terjadi di balik layar.
+      </p>
+
+      <div class="mf-block">
+        <div class="mf-mitos">
+          <p class="mf-label">❌ MITOS</p>
+          <p>"Designer cuma-cuma desain terlihat bagus."</p>
+        </div>
+        <div class="mf-fakta">
+          <p class="mf-label">✅ FAKTA</p>
+          <p>Design bukan cuma soal estetika. Designer juga memikirkan pesan, fungsi, target audiens, dan cara informasi dikelola dalam satu tampilan visual.</p>
+        </div>
+      </div>
+
+      <p>
+        Sebuah desain yang bagus secara visual belum tentu efektif secara komunikasi. Seorang designer yang baik akan mempertanyakan: siapa yang akan melihat ini? Apa yang ingin kita sampaikan? Apakah hierarchy-nya jelas? Apakah pesan utamanya langsung tertangkap dalam 3 detik pertama?
+      </p>
+
+      <div class="blockquote">
+        <p>"Good design is not just what looks good. It also needs to perform, to convert, to communicate."</p>
+      </div>
+
+      <p>
+        Itulah kenapa ketika kamu order desain ke kami di <strong>Mengejar Deadline</strong>, kami nggak cuma tanya "mau warnanya apa" — tapi juga nanya soal tujuan kontennya, siapa audiensnya, dan di mana konten itu akan dipakai.
+      </p>
+
+      <!-- Inline CTA 1 -->
+      <div class="inline-cta">
+        <h3>Butuh desain yang bukan cuma cantik, tapi juga efektif?</h3>
+        <p>Kami bantu dari konsep sampai eksekusi. <strong>Order sekarang — slot terbatas!</strong></p>
+        <div class="cta-btns">
+          <a href="https://instagram.com/mengejar.deadlines" class="btn-primary" target="_blank" rel="noopener">DM Instagram</a>
+          <a href="https://t.me/deadlinerrs" class="btn-outline" target="_blank" rel="noopener">Chat Telegram</a>
+        </div>
+      </div>
+
+      <!-- ── MITOS 2 ── -->
+      <h2>#2 — "Designer tinggal pilih font yang bagus."</h2>
+      <p>
+        Typography adalah salah satu elemen paling underrated dalam desain. Banyak yang pikir pilih font itu semudah scroll-scroll di Canva terus klik yang "kelihatan keren". Padahal typography itu ilmu yang dalam.
+      </p>
+
+      <div class="mf-block">
+        <div class="mf-mitos">
+          <p class="mf-label">❌ MITOS</p>
+          <p>"Designer tinggal pilih font yang bagus."</p>
+        </div>
+        <div class="mf-fakta">
+          <p class="mf-label">✅ FAKTA</p>
+          <p>Typography bukan sekadar pilih font. Ukuran, spacing, warna, hierarki, dan keterbacaan juga menentukan apakah sebuah desain bekerja dengan baik — atau malah membingungkan pembacanya.</p>
+        </div>
+      </div>
+
+      <p>
+        Font combination yang salah bisa bikin desain yang secara konsep bagus jadi terasa berantakan. Sebaliknya, dua font yang tepat — bahkan yang terlihat biasa saja — bisa menghasilkan desain yang terasa sangat premium.
+      </p>
+      <p>
+        Di sinilah pengalaman dan sense of design seorang profesional bicara. Bukan soal software, tapi soal keputusan visual yang diambil berdasarkan prinsip yang solid.
+      </p>
+
+      <!-- ── MITOS 3 ── -->
+      <h2>#3 — "Kalau deadline mepet, hasilnya pasti jelek."</h2>
+      <p>
+        Ini yang menarik — dan ini yang sebetulnya menjadi akar dari brand kami, <em>Mengejar Deadline</em>. Stigma bahwa kerja cepat selalu berkompromi dengan kualitas, tidak sepenuhnya benar.
+      </p>
+
+      <div class="mf-block">
+        <div class="mf-mitos">
+          <p class="mf-label">❌ MITOS</p>
+          <p>"Kalau designer travail, ide pasti langsung muncul."</p>
+        </div>
+        <div class="mf-fakta">
+          <p class="mf-label">✅ FAKTA</p>
+          <p>Ide bagus biasanya lahir dari riset, brainstorming, eksplorasi, trial & error, dan revisi. Inspirasi tidak selalu datang dalam sekali duduk — dan itu normal.</p>
+        </div>
+      </div>
+
+      <p>
+        Proses kreatif itu tidak linear. Bahkan desainer paling berpengalaman pun butuh waktu untuk explorasi sebelum menemukan arah yang tepat. Yang membedakan profesional dari pemula bukan bahwa ide langsung datang — tapi bahwa mereka punya sistem untuk menemukan ide itu secara efisien, bahkan dalam tekanan waktu.
+      </p>
+
+      <!-- ── MITOS 4 ── -->
+      <h2>#4 — "Revisi itu tidak butuh waktu lama."</h2>
+      <p>
+        Ini salah satu poin yang sering jadi sumber miskomunikasi antara klien dan designer. Banyak yang menganggap revisi itu tinggal "ganti warna" atau "geser dikit" — padahal seringkali tidak sesederhana itu.
+      </p>
+
+      <div class="mf-block">
+        <div class="mf-mitos">
+          <p class="mf-label">❌ MITOS</p>
+          <p>"Revisi itu tidak butuh waktu lama."</p>
+        </div>
+        <div class="mf-fakta">
+          <p class="mf-label">✅ FAKTA</p>
+          <p>Perubahan kecil tetap membutuhkan waktu. Apalagi jika revisian mengubah layout, tone, atau seluruh arah desain. Revisi adalah bagian dari proses — bukan fitur gratis tanpa batas.</p>
+        </div>
+      </div>
+
+      <p>
+        Misalnya, kalau kamu minta ganti warna utama dari biru ke oranye — itu bukan cuma klik "change color". Itu berarti mereview semua elemen yang berinteraksi dengan warna tersebut: kontras, konsistensi, tone keseluruhan, dan lain-lain. Bisa jadi setengah jam pekerjaan, bisa lebih.
+      </p>
+      <p>
+        Semakin kamu memberikan brief yang jelas dari awal, semakin cepat dan akurat hasilnya. Itulah kenapa di <strong>Mengejar Deadline</strong>, kami selalu mulai dengan sesi brief yang proper sebelum mulai kerja.
+      </p>
+
+      <!-- ── MITOS 5 ── -->
+      <h2>#5 — "Desain itu mahal dan hanya untuk bisnis besar."</h2>
+      <p>
+        Mitos terakhir ini yang paling sering menghambat orang — terutama UMKM, startup kecil, atau individu — untuk investasi di desain. Padahal desain yang baik justru yang paling diperlukan di tahap awal.
+      </p>
+
+      <div class="mf-block">
+        <div class="mf-mitos">
+          <p class="mf-label">❌ MITOS</p>
+          <p>"Desain bagus itu mahal dan hanya untuk perusahaan besar."</p>
+        </div>
+        <div class="mf-fakta">
+          <p class="mf-label">✅ FAKTA</p>
+          <p>Desain yang baik bukan tentang budget yang besar — tapi tentang partner yang tepat. Brand kecil yang tampil profesional bisa bersaing dengan brand besar. Persepsi visual itu nyata.</p>
+        </div>
+      </div>
+
+      <p>
+        Di Mengejar Deadline, kami bekerja dengan individu, kreator, UMKM, startup, hingga perusahaan. Setiap project disesuaikan dengan kebutuhan dan scope — bukan paket cookie-cutter yang sama untuk semua.
+      </p>
+
+      <!-- ── Kesimpulan ── -->
+      <h2>Jadi, Apa Kesimpulannya?</h2>
+
+      <p>
+        Dunia desain itu dalam dan penuh nuansa. Tidak sesederhana "pilih template, ganti foto, selesai" — tapi juga tidak harus serumit yang dibayangkan kalau kamu punya partner yang tepat.
+      </p>
+
+      <p>
+        Di <strong>Mengejar Deadline</strong>, kami hadir untuk kamu yang punya ide, punya bisnis, punya konten — tapi butuh eksekusi visual yang proper. Kami tidak cuma bikin desain yang "bagus dilihat", tapi desain yang bekerja untuk tujuanmu.
+      </p>
+
+      <div class="blockquote">
+        <p>"We chase deadlines. You chase the idea."</p>
+      </div>
+
+    </div><!-- /article-body -->
+
+    <!-- Share Section -->
+    <div class="article-share">
+      <p>Bagikan artikel ini:</p>
+      <div class="share-links">
+        <a href="https://instagram.com/mengejar.deadlines" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://t.me/deadlinerrs" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://wa.me/?text=5%20Mitos%20%26%20Fakta%20Seputar%20Desain%20-%20Mengejar%20Deadline" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Back nav -->
+    <div class="article-nav">
+      <a href="../blog.html">← Semua Artikel</a>
+      <a href="../index.html#cta">Order Sekarang →</a>
+    </div>
+
+  </article>
+
+  <!-- Final CTA -->
+  <section class="final-article-cta">
+    <div class="orb orb-5" style="position:absolute;top:-200px;right:-150px;"></div>
+    <div class="orb orb-6" style="position:absolute;bottom:-100px;left:-100px;"></div>
+    <div class="container" style="position:relative;z-index:2;">
+      <p class="label-tag">Open for Order</p>
+      <h2 class="cta-title">SIAP ORDER<br/><span class="accent">SEKARANG?</span></h2>
+      <p class="cta-sub">
+        Ceritakan ideamu ke kami — desain, video, branding, atau apapun yang kamu butuhkan.<br/>
+        <strong style="color:var(--white);">Slot terbatas. Jangan tunda lagi.</strong>
+      </p>
+      <div class="cta-buttons" style="justify-content:center;">
+        <a href="https://instagram.com/mengejar.deadlines" class="btn-primary" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          DM Instagram Sekarang
+        </a>
+        <a href="https://t.me/deadlinerrs" class="btn-outline" target="_blank" rel="noopener">
+          Chat Telegram →
+        </a>
+      </div>
+      <p style="font-size:0.78rem;color:var(--gray-3);margin-top:2rem;">
+        Atau cek portofolio kami di <a href="https://linktr.ee/mengejar.deadlines" style="color:var(--blue);" target="_blank">Linktree</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="../assets/logo.png" alt="Mengejar Deadline" style="height:36px;" onerror="this.style.display='none'" />
+          <p>Creative Design • Editing • Branding • Rebranding</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://instagram.com/mengejar.deadlines" target="_blank">Instagram</a>
+          <a href="https://t.me/deadlinerrs" target="_blank">Telegram</a>
+          <a href="https://linktr.ee/mengejar.deadlines" target="_blank">Linktree</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Mengejar Deadline. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

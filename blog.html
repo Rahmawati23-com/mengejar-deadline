@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Mengejar Deadline | Tips Design, Branding & Kreatif</title>
+  <meta name="description" content="Baca artikel seputar design, branding, video editing, dan dunia kreatif dari Mengejar Deadline. Insight jujur untuk kamu yang mau tampil lebih profesional." />
+  <meta property="og:title" content="Blog — Mengejar Deadline" />
+  <meta property="og:description" content="Tips design, branding, editing, dan insight kreatif dari Mengejar Deadline." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Blog-specific overrides */
+    .blog-hero {
+      padding: 10rem 1.5rem 5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-hero .orb-1 { top: -80px; right: -80px; width: 400px; height: 400px; }
+    .blog-hero .orb-2 { bottom: 0; left: -60px; width: 300px; height: 300px; }
+
+    .blog-index-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .blog-index-card {
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .blog-index-card .blog-card-img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+      background: linear-gradient(135deg, rgba(26,58,143,0.6), rgba(6,8,16,1));
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-index-card .blog-card-img img {
+      width: 100%; height: 100%; object-fit: cover; opacity: 0.75;
+    }
+    .blog-index-card .card-cat-badge {
+      position: absolute;
+      top: 1rem; left: 1rem;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #fff;
+      background: var(--blue);
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+    }
+    .blog-index-card .blog-card-body {
+      padding: 1.5rem;
+    }
+    .blog-index-card .blog-card-body h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.3;
+      margin-bottom: 0.6rem;
+    }
+    .blog-index-card .blog-card-body p {
+      font-size: 0.85rem;
+      color: var(--gray-2);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .blog-index-card .blog-card-body .blog-meta {
+      font-size: 0.75rem;
+      color: var(--gray-3);
+    }
+
+    /* Featured post */
+    .featured-post {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin-bottom: 3rem;
+    }
+    .featured-post .feat-img {
+      height: 340px;
+      background: linear-gradient(135deg, rgba(26,58,143,0.6), rgba(6,8,16,1));
+      border-radius: 16px 0 0 16px;
+      overflow: hidden;
+    }
+    .featured-post .feat-img img {
+      width: 100%; height: 100%; object-fit: cover; opacity: 0.75;
+    }
+    .featured-post .feat-body {
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .featured-post .feat-body .label-tag { margin-bottom: 1rem; }
+    .featured-post .feat-body h2 {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+    .featured-post .feat-body p {
+      font-size: 0.9rem;
+      color: var(--gray-2);
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+    .featured-post .feat-body .blog-meta {
+      font-size: 0.75rem;
+      color: var(--gray-3);
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .featured-post {
+        grid-template-columns: 1fr;
+      }
+      .featured-post .feat-img {
+        height: 220px;
+        border-radius: 16px 16px 0 0;
+      }
+      .featured-post .feat-body { padding: 1.5rem; }
+      .blog-index-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="nav-wrapper">
+    <header class="nav-pill">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Mengejar Deadline" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <span class="logo-text" style="display:none">MD</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+      </nav>
+      <a href="index.html#cta" class="btn-pill">Let's Work</a>
+      <button class="nav-toggle" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    </header>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#cta" class="btn-pill">Let's Work</a></li>
+    </ul>
+  </div>
+
+  <!-- Blog Hero -->
+  <section class="blog-hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <span class="ghost-text ghost-center" style="top:30%;">BLOG</span>
+    <div class="container" style="position:relative;z-index:2;">
+      <p class="label-tag">From The Blog</p>
+      <h1 class="section-title">INSIGHT KREATIF,<br/><span class="accent">TANPA BASA-BASI.</span></h1>
+      <p style="color:var(--gray-2);max-width:500px;margin:0 auto;">
+        Tips design, branding, editing, dan hal-hal jujur seputar dunia kreatif — langsung dari dapur Mengejar Deadline.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Content -->
+  <section class="section-block" style="padding-top:2rem;">
+    <div class="container">
+
+      <!-- Featured Post -->
+      <a href="blog/mitos-fakta-design.html" class="glass-card featured-post" style="text-decoration:none;">
+        <div class="feat-img">
+          <img src="assets/blog-mitos-fakta.png" alt="5 Mitos & Fakta Seputar Desain" onerror="this.style.display='none'" />
+        </div>
+        <div class="feat-body">
+          <p class="label-tag">🔥 Featured · Design</p>
+          <h2>5 Mitos & Fakta Seputar Desain yang Sering Salah Dipahami</h2>
+          <p>Yang sering kamu dengar belum tentu yang pasti benar. Dari soal font, revisi, sampai inspirasi — kita luruskan satu per satu.</p>
+          <p class="blog-meta">7 Oktober 2026 · Mengejar Deadline</p>
+          <span class="btn-outline" style="width:fit-content;">Baca Artikel →</span>
+        </div>
+      </a>
+
+      <!-- More Posts -->
+      <h3 style="font-size:0.75rem;font-weight:700;letter-spacing:0.15em;color:var(--gray-3);text-transform:uppercase;margin-bottom:1.5rem;">SEMUA ARTIKEL</h3>
+      <div class="blog-index-grid">
+        <!-- Placeholder for future posts -->
+        <div class="glass-card" style="padding:2rem;display:flex;align-items:center;justify-content:center;min-height:180px;border-style:dashed;">
+          <p style="color:var(--gray-3);font-size:0.85rem;text-align:center;">Artikel selanjutnya akan segera hadir.<br/>Stay tuned!</p>
+        </div>
+        <div class="glass-card" style="padding:2rem;display:flex;align-items:center;justify-content:center;min-height:180px;border-style:dashed;">
+          <p style="color:var(--gray-3);font-size:0.85rem;text-align:center;">Ikuti kami di Instagram<br/><a href="https://instagram.com/mengejar.deadlines" target="_blank" style="color:var(--blue);font-weight:600;">@mengejar.deadlines</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mini CTA -->
+  <section class="section-block" style="padding:4rem 0;">
+    <div class="container" style="text-align:center;">
+      <p class="label-tag">Open for Order</p>
+      <h2 class="section-title" style="font-size:clamp(1.75rem,4vw,3rem);">MAU DESAIN<br/><span class="accent">YANG BEDA?</span></h2>
+      <p style="color:var(--gray-2);margin-bottom:2rem;">Order sekarang dan ceritakan ideamu ke kami.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;">
+        <a href="https://instagram.com/mengejar.deadlines" class="btn-primary" target="_blank">DM Instagram</a>
+        <a href="https://t.me/deadlinerrs" class="btn-outline" target="_blank">Chat Telegram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Mengejar Deadline" style="height:36px;" onerror="this.style.display='none'" />
+          <p>Creative Design • Editing • Branding • Rebranding</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://instagram.com/mengejar.deadlines" target="_blank">Instagram</a>
+          <a href="https://t.me/deadlinerrs" target="_blank">Telegram</a>
+          <a href="https://linktr.ee/mengejar.deadlines" target="_blank">Linktree</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Mengejar Deadline. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
