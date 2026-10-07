@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const blogGrid = document.querySelector('#blog-preview .blog-grid');
   if (blogGrid) {
     const post = blogPosts[0];
+    // Fetch dynamic views & likes count from localStorage or default
+    const views = parseInt(localStorage.getItem(`md_blog_views_${post.slug}`), 10) || 143;
+    const likes = parseInt(localStorage.getItem(`md_blog_likes_${post.slug}`), 10) || 48;
+
     // Build one large featured card
     const card = document.createElement('a');
     card.href = `blog/${post.slug}.html`;
@@ -30,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p class="label-tag">${post.category}</p>
         <h3>${post.title}</h3>
         <p class="bfc-excerpt">${post.excerpt}</p>
-        <p class="blog-meta">${post.date} · ${post.author}</p>
+        <p class="blog-meta">${post.date} · ${post.author} · 👁️ ${views} Dilihat · ❤️ ${likes} Suka</p>
         <span class="btn-outline bfc-btn">Baca Artikel →</span>
       </div>
     `;

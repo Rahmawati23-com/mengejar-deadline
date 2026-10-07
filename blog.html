@@ -194,7 +194,7 @@
           <p class="label-tag">🔥 Featured · Design</p>
           <h2>5 Mitos & Fakta Seputar Desain yang Sering Salah Dipahami</h2>
           <p>Yang sering kamu dengar belum tentu yang pasti benar. Dari soal font, revisi, sampai inspirasi — kita luruskan satu per satu.</p>
-          <p class="blog-meta">7 Oktober 2026 · Mengejar Deadline</p>
+          <p class="blog-meta">7 Oktober 2026 · Mengejar Deadline · 👁️ <span id="featViews">142</span> Dilihat · ❤️ <span id="featLikes">48</span> Suka</p>
           <span class="btn-outline" style="width:fit-content;">Baca Artikel →</span>
         </div>
       </a>
@@ -246,5 +246,17 @@
     </div>
   </footer>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const slug = 'mitos-fakta-design';
+      const views = parseInt(localStorage.getItem('md_blog_views_' + slug), 10) || 142;
+      const likes = parseInt(localStorage.getItem('md_blog_likes_' + slug), 10) || 48;
+      
+      const vEl = document.getElementById('featViews');
+      const lEl = document.getElementById('featLikes');
+      if (vEl) vEl.textContent = views;
+      if (lEl) lEl.textContent = likes;
+    });
+  </script>
 </body>
 </html>
